@@ -1,0 +1,190 @@
+#containermemory > .inner {
+    padding: 1rem 2rem;
+    width: 100%;
+    /*max-width: 65rem;*/
+    /*z-index: -1;*/
+}
+
+#containermemory {
+    display: flex;
+    width: 100%;
+    width: 100vw;
+    min-height: 40rem;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    /*background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.4296875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(52deg, #20222E 0%, #42475C 100%);
+    background-size: 512px, cover;
+    background-position: center, 0% 0%;
+    background-repeat: repeat, repeat;
+    border-style: solid;
+    border-color: #FF7F63;
+    border-top-width: 10px;*/
+    background-attachment: fixed;
+    border-style: solid;
+    /*border-color: #00FFD1;*/
+    border-color:#0C39FF;
+    border-style: solid;
+    border-top-width: 10px;
+    background-image: /*url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E') , /*linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)),*/ url('../images/cabin.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    /*z-index: 2;*/
+}
+#containermemory.columns {
+    /*z-index: -4;*/
+}
+
+#containermemory.columns:after {
+    content:"";
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background:rgba(0,0,0,0.7);
+    height:100%;
+    /*z-index: -5;*/
+}
+
+
+.icons {
+    cursor: default;
+    padding: 0;
+    letter-spacing: 0;
+}
+
+.icons li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+}
+
+.icons li a {
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.icons li a svg {
+    display: block;
+    position: relative;
+    -moz-transition: fill 0.25s ease;
+    -webkit-transition: fill 0.25s ease;
+    -ms-transition: fill 0.25s ease;
+    transition: fill 0.25s ease;
+}
+
+.icons li a + svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*z-index: -1;*/
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transition: fill 0.25s ease, stroke 0.25s ease;
+    -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
+    -ms-transition: fill 0.25s ease, stroke 0.25s ease;
+    transition: fill 0.25s ease, stroke 0.25s ease;
+}
+
+.icons li a .label {
+    display: none;
+}
+
+#icons02 li a {
+    border-radius: 2rem;
+    width: 2em;
+    height: 2em;
+}
+
+#icons02 li a svg {
+    width: 60%;
+    height: 60%;
+}
+
+#icons02 a svg {
+    fill: #FFFFFF;
+}
+
+#icons02 a {
+    border: solid 1px #FFFFFF;
+}
+
+#icons02 a:hover {
+    border-color: #00FFD1 !important;
+}
+
+#icons02 a:hover svg {
+    fill: #00FFD1 !important;
+}
+
+div.memorycontainer {
+	display: inline-flex;
+	background: rgba(255,255,255,0.55);
+	padding: 2.5em 4em;
+	border: 2px;
+	border-radius: 15px;
+	color: #000000;
+    margin: 1em 6em 4em;
+    /*z-index: 100;*/
+}
+
+img.lovingmem{
+    padding: 0 2em;
+    margin: 0 0;
+    /*z-index: 3;*/
+}
+@media (max-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 736px) {
+    html {
+        font-size: 11pt;
+    }
+
+
+}
+@media (max-width: 480px) {
+  
+    div.memorycontainer {
+        padding: 2.5em 8em;
+}
+}
+@media (max-width: 360px) {
+   
+
+}

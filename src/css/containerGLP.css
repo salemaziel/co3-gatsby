@@ -1,0 +1,311 @@
+#ContainerGLP > .innerGLP {
+    padding: 6rem 6rem;
+    width: 100%;
+    max-width: 65rem;
+}
+ 
+#ContainerGLP {
+    display: flex;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 40rem;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-attachment: fixed;
+    border-style: solid;
+    border-color: rgb(0, 109, 211);
+    border-top-width: 10px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.46875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(43,50,94,0.412), rgba(43,50,94,0.412)), url('../images/container03.jpg');
+    background-size: cover, auto;
+    background-position: center;
+    background-repeat: no-repeat;
+   /* z-index: 2;*/
+    padding: 2em 0;
+}
+
+
+.glpspan {
+    color: #f9b930;
+}
+
+
+div.afterSpacerGLP {
+    background: rgba(49, 52, 68, 0.1);
+    margin: 0 7rem;
+    padding: 0 5rem;
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+div.firstalbumtitle{
+    align-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    display: flex;
+    flex-direction: column;
+    /*flex-flow: wrap;*/
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    /*width: 350px;*/
+    /*max-width: 550px;*/
+}
+
+img.firstalbum {
+    margin-top: 50px;
+    width: 500px;
+    display: inline-block;
+    box-shadow: 3px 3px 10px black;
+}
+
+div.oldAlbumText {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+div.firstalbumHeader {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+div.proceeds {
+    /*color: #f9b930!important;*/
+    /*background-color: red;*/
+    padding: 1px;
+    margin: 1px;
+}
+p.proceeds {
+    /*font-size: 40px;
+    font-weight: 900;*/
+    margin: 0.5rem;
+    padding: 1rem 4rem;
+    text-align: left;
+}
+
+.glpbutton1 {
+    background: rgba(192, 192, 192, 0.2);
+    border-color: rgb(192, 192, 192);
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    width: 17rem;
+}
+.glpbutton1:hover{
+    background-color: silver;
+    color: black;
+}
+
+.glpbutton2 {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: rgba(255, 215, 0);
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 17rem;
+}
+.glpbutton2:hover{
+    background-color: gold;
+    color: black;
+}
+
+
+@media (min-width: 2400px) {
+    #ContainerGLP {
+        min-height: 50vh;
+        padding: 4em 0;
+    }
+    img.firstalbum {
+        margin: 50px 0 0;
+        width: 700px;
+        display: inline-block;
+    }
+    
+    .oldAlbumText {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+    div.proceeds {
+        /*color: #f9b930!important;*/
+        /*background-color: red;*/
+        padding: 100px;
+        margin: 20px;
+    }
+}
+@media (max-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 13pt;
+    }
+    #ContainerGLP {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 11pt;
+    }
+    img.firstalbum {
+        margin-top: 50px;
+        width: 350px;
+        display: inline-block;
+    }
+    div.firstalbumHeader {
+        display: flex;
+        justify-content: center!important;
+        flex-direction: column!important;
+        align-items: center!important;    
+    }
+    div.oldAlbumText {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 736px) {
+    html {
+        font-size: 11pt;
+    }
+
+   
+/*
+    #ContainerGLP > .innerGLP {
+        padding: 3.5rem 2rem;
+        max-width: 100%;
+    }
+
+    #ContainerGLP {
+        min-height: 30rem;
+    }
+
+*/
+
+
+}
+
+@media (max-width: 480px) {
+    
+/*
+    div.afterSpacerGLPGLP {
+        background: rgba(49, 52, 68, 0.3);
+        margin: 2rem 1rem;
+        padding: 2rem;
+        color: white;
+    }*/
+    img.firstalbum {
+        margin-top: 50px;
+        width: 325px;
+        display: flex;
+        box-shadow: none;
+    }
+
+    div.firstalbumHeader {
+        display: flex;
+        justify-content: center!important;
+        flex-direction: column!important;
+        position: relative;
+        
+        }
+        div.firstalbumtitle{
+            align-content: center;
+            align-items: center;
+            /*vertical-align: bottom;*/
+            display: flex;
+            flex-direction: column;
+            /*flex-flow: wrap;*/
+            justify-content: center;
+            text-align: center;
+            word-wrap: break-word;
+            width: 350px;
+            max-width: 375px;
+            
+        }
+        div.oldAlbumText {
+            width: 350px;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding-left: 6em;
+            padding-right: 6em;
+        }
+        div.proceeds {
+            /*color: #f9b930!important;*/
+            /*background-color: red;*/
+            padding: 10px;
+            margin: 20px;
+        }
+
+    .glpbutton1 {
+        background: transparent;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        width: 17rem;
+        margin: 0.5rem;
+}
+
+    .glpbutton2 {
+        background: transparent; 
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        width: 17rem;
+        margin: 0.5rem;
+
+    }
+
+    p.proceeds {
+        margin: 0.5rem;
+        padding: 1rem 2.5rem;
+    }
+    
+}
+@media (max-width: 360px) {
+  /*
+    p.style2 {
+        color: white;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 0 0 24px;
+    }
+
+*/
+
+
+    #ContainerGLP {
+        min-height: 20rem;
+    }
+
+
+}

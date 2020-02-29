@@ -1,0 +1,334 @@
+#containerHeader > .innerHeader {
+    text-align: center;
+    padding: 2rem 6rem;
+    width: 100%;
+    /*max-width: 65rem;*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+#containerHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 40rem;
+    /*-moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;*/
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*z-index: 2;*/
+}
+/*
+#containerHeader > .innerHeader {
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0 auto 0 auto;
+    -moz-align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+}
+*/
+div.mainrow {
+    display: flex;
+}
+div.albumpromo {
+    padding: 1rem;
+}
+img.albumpromo {
+    /*margin-left: 6em;
+    margin-right: 6em;
+    display: block;*/
+    box-shadow: 3px 3px 10px black;
+    width: 550px;
+    height: 550px;
+    overflow: visible;
+    /*padding: 2rem;*/
+}
+div.albumlogo {
+    padding: 6rem 1rem ;
+    
+}
+img.albumlogo {
+    width: 800px;
+    padding-top: 4rem;
+    /*padding-bottom: 10em;
+    left: 4em;*/
+}
+p.albumlogo {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FCAC02 !important;
+    font-weight: 500;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 6px black;
+    letter-spacing: 3px;
+    
+}
+
+@media (min-width: 2400px) {
+#containerHeader {
+    /*display: -ms-flexbox;
+    display: flex;*/
+    width: 100%;
+    width: 100vw;
+    min-height: 60rem;
+    /*-moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;*/
+    background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.553)), to(rgba(0,0,0,0.553))), url('../images/album-cover-bg.jpg');
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');
+    background-image: linear-gradient(to top, rgba(0,0,0,0.553), rgba(0,0,0,0.553)), url('../images/album-cover-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+   
+    img.albumpromo {
+        /*margin-left: 6em;
+        margin-right: 2em;
+        display: flex;*/
+        box-shadow: 3px 3px 10px black;
+        width: 800px;
+        height: 800px;
+        overflow: visible;
+    }
+
+    img.albumlogo {
+        width: 1000px;
+    }
+    
+}
+
+@media (max-width: 1680px) {
+    html {
+        font-size: 13pt;
+    }
+    /*img.albumpromo {
+        margin-left: 6em;
+        margin-right: 6em;
+        display: block;
+        box-shadow: 3px 3px 10px black;
+        width: 500px;
+        height: 500px;
+        overflow: visible;
+    }
+    
+    img.albumlogo {
+        width: 800px;
+    }
+}
+*/}
+@media (max-width: 1280px) {
+    html {
+        font-size: 13pt;
+    }
+    #ContainerHeader {
+        flex-direction: column;
+        min-height: 50em;
+        height: 60em;
+        width: 100%;
+    }
+    div.mainrow {
+        flex-direction: column;
+    }
+    div.albumpromo {
+        margin: 0 2rem;
+    }
+   img.albumpromo {
+        margin: 0 0 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        /*display: flex;
+        flex-wrap: wrap;* /
+        /*box-shadow: 3px 3px 10px black;*/
+        width: 500px;
+        height: 500px;
+    }
+    div.albumlogo {
+        padding: 1rem;
+        margin: 0 0 3rem;
+    }
+    img.albumlogo {
+        width: 600px;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 11pt;
+    }
+    #ContainerHeader {
+        flex-direction: column;
+        min-height: 50rem;
+        height: 50rem;
+    }
+    div.mainrow {
+        flex-direction: column;
+    }
+    div.albumpromo {
+        margin: 1rem 0 3rem;
+        padding: 1rem;
+    }
+    img.albumpromo {
+       /* top: 4em;*/
+        /*margin-left: 12em;*/
+        margin: 2rem 0 0;
+        padding: 0;
+        /*display: block;*/
+        /*box-shadow: 3px 3px 10px black;*/
+        width: 375px;
+        height: 375px;
+    }
+    div.albumlogo {
+        padding: 1rem 0 4rem;
+    }
+    img.albumlogo {
+        width: 450px;
+        padding: 1rem;
+        margin: 0 2rem 0 4rem;
+    }
+
+}
+@media (max-width: 736px) {
+        html {
+            font-size: 11pt;
+        }
+        #ContainerHeader {
+            flex-direction: column!important;
+            min-height: 50rem;
+    }
+    /*
+        #containerHeader > .innerHeader {
+           /* padding: 3.5rem 2rem;* /
+           padding: 0;
+            max-width: 100%;
+        }
+    */
+        div.albumpromo {
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+        }
+
+        img.albumpromo {
+            margin: 1rem 0;
+            padding: 0;
+            width: 350px;
+            height: 350px;
+        }
+        /*.albumpromo {
+            margin-left: 6em;
+            margin-right: 0;
+            padding-right: 0;
+            display: block;
+            box-shadow: 3px 3px 10px black;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .albumlogo {
+            width: 150px;
+        }
+    */
+}
+    @media (max-width: 480px) {
+       #containerHeader {
+            min-height: 50rem;
+            display: flex;
+            flex-direction: column!important;
+            max-width: 100%;
+            width: 100%;
+        }
+        #containerHeader > .innerHeader {
+            margin: 0;
+            padding: 0;
+            width: inherit;
+        }
+        div.mainrow {
+            display: flex;
+            flex-direction: column;
+        }
+        div.albumpromo {
+            margin: 1rem 0;
+            padding: 3rem 0 1rem;
+        }
+        img.albumpromo {
+            margin: 1rem 0;
+            padding: 0;
+            -webkit-box-shadow: 3px 3px 10px black;
+            box-shadow: 3px 3px 10px black;
+            width: 300px;
+            height: 300px;
+        }
+        div.albumlogo {
+            margin: 1rem 0;
+            padding: 2rem 0 4rem;
+        }
+        img.albumlogo {
+            width: 360px;
+            padding: 1rem 0;
+            margin: 1rem 0 1rem;
+        }
+    }
+        
+
+    @media (max-width: 360px) {
+       
+        #containerHeader {
+            min-height: 40rem;
+            display: flex;
+            flex-direction: column!important;
+            max-width: 100%;
+            width: 100%;
+        }
+        div.albumpromo {
+            margin: 1rem 0 5rem;
+            padding: 1rem 0 0.5rem;
+        }
+        img.albumpromo {
+           /* margin: 0;
+            padding: 0;*/
+            box-shadow: 3px 3px 10px black;
+            width: 225px;
+            height: 225px;
+        }
+        div.albumlogo {
+            margin: 1rem 0;
+            padding: 1rem 0 4rem;
+        }
+        img.albumlogo {
+            margin: 0.5rem 0;
+            width: 300px;
+            padding: 0.5rem 1rem;   
+        }
+        p.albumlogo {
+            font-size: 1.7rem;
+            letter-spacing: 2px;
+    }
+}
